@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/selector_home"
+        android:title="首页" />
+    <item
+        android:id="@+id/moYuFragment"
+        android:icon="@drawable/selector_moyu"
+        android:title="摸鱼" />
+    <item
+        android:id="@+id/wendaFragment"
+        android:icon="@drawable/selector_wenda"
+        android:title="问答" />
+    <item
+        android:id="@+id/schoolFragment"
+        android:icon="@drawable/selector_school"
+        android:title="学院" />
+    <item
+        android:id="@+id/mineFragment"
+        android:icon="@drawable/selector_mine"
+        android:title="我的" />
+</menu>

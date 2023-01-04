@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/exchange_nav"
+    app:startDestination="@id/exchangeBgFragment">
+
+    <fragment
+        android:id="@+id/exchangeBgFragment"
+        android:name="com.alex.sobapp.fragment.ExchangeBgFragment"
+        android:label="fragment_exchange_bg"
+        tools:layout="@layout/fragment_exchange_bg" >
+        <action
+            android:id="@+id/toPickerFragment"
+            app:destination="@id/pickerFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/pickerFragment"
+        android:name="com.alex.sobapp.fragment.PickerFragment"
+        android:label="PickerFragment" >
+        <action
+            android:id="@+id/toPhotoFragment"
+            app:destination="@id/photoFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.alex.sobapp.fragment.PhotoFragment"
+        android:label="fragment_photo"
+        tools:layout="@layout/fragment_photo" />
+</navigation>

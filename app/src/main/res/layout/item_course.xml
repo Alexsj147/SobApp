@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/course_cover"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/default_img" />
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="JavaWeb微服务项目实战《摸鱼君》"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_cover" />
+
+        <ImageView
+            android:id="@+id/course_level"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_title"
+            app:srcCompat="@mipmap/course_level" />
+
+        <TextView
+            android:id="@+id/course_level_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="初级"
+            app:layout_constraintStart_toEndOf="@+id/course_level"
+            app:layout_constraintTop_toTopOf="@+id/course_level" />
+
+        <ImageView
+            android:id="@+id/course_view_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/course_level_text"
+            app:layout_constraintTop_toTopOf="@+id/course_level"
+            app:srcCompat="@mipmap/view_count" />
+
+        <TextView
+            android:id="@+id/course_view_count_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="2198"
+            app:layout_constraintStart_toEndOf="@+id/course_view_count"
+            app:layout_constraintTop_toTopOf="@+id/course_view_count" />
+
+        <ImageView
+            android:id="@+id/course_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/course_view_count_text"
+            app:layout_constraintTop_toTopOf="@+id/course_view_count"
+            app:srcCompat="@mipmap/course_update" />
+
+        <TextView
+            android:id="@+id/course_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="连载"
+            app:layout_constraintStart_toEndOf="@+id/course_status"
+            app:layout_constraintTop_toTopOf="@+id/course_level" />
+
+        <TextView
+            android:id="@+id/course_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="￥9999"
+            android:textColor="@color/ff666666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_level" />
+
+        <ImageView
+            android:id="@+id/teacher_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/course_price"
+            app:srcCompat="@mipmap/default_avatar" />
+
+        <TextView
+            android:id="@+id/teacher_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="拉大锯"
+            app:layout_constraintBottom_toBottomOf="@+id/teacher_avatar"
+            app:layout_constraintStart_toEndOf="@+id/teacher_avatar"
+            app:layout_constraintTop_toTopOf="@+id/teacher_avatar" />
+
+        <TextView
+            android:id="@+id/start_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="开始学习"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:background="@drawable/start_study_bg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@+id/teacher_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/teacher_avatar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextWithClear">
+        <attr name="clearIcon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="EditTextWithShow">
+        <attr name="showIcon" format="reference" />
+    </declare-styleable>
+</resources>

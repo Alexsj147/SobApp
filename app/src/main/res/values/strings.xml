@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">阳光沙滩</string>
+    <string name="text_detail">文章详情</string>
+    <string name="focus_author">关注作者</string>
+    <string name="has_focus_author">已关注该作者</string>
+    <string name="response">回复</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

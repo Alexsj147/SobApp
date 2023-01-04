@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/course_detail_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="课程详情"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline74"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline74">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/course_cover"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/default_img" />
+
+                    <TextView
+                        android:id="@+id/course_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/ff333333"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/course_cover"
+                        tools:text="JavaWeb微服务项目实战《摸鱼君》" />
+
+                    <ImageView
+                        android:id="@+id/teacher_avatar"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/course_title"
+                        app:srcCompat="@mipmap/default_avatar" />
+
+                    <TextView
+                        android:id="@+id/teacher_name_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:textColor="@color/ff333333"
+                        app:layout_constraintBottom_toBottomOf="@+id/teacher_avatar"
+                        app:layout_constraintStart_toEndOf="@+id/teacher_avatar"
+                        app:layout_constraintTop_toTopOf="@+id/teacher_avatar"
+                        tools:text="拉大锯" />
+
+                    <TextView
+                        android:id="@+id/course_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="难度·"
+                        android:textColor="@color/ff333333"
+                        app:layout_constraintBottom_toBottomOf="@+id/teacher_avatar"
+                        app:layout_constraintStart_toEndOf="@+id/teacher_name_text"
+                        app:layout_constraintTop_toTopOf="@+id/teacher_avatar" />
+
+                    <TextView
+                        android:id="@+id/course_level_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:textColor="@color/ff333333"
+                        app:layout_constraintBottom_toBottomOf="@+id/course_level"
+                        app:layout_constraintStart_toEndOf="@+id/course_level"
+                        app:layout_constraintTop_toTopOf="@+id/course_level"
+                        tools:text="初级" />
+
+                    <TextView
+                        android:id="@+id/course_view_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="围观人数·"
+                        android:textColor="@color/ff333333"
+                        app:layout_constraintBottom_toBottomOf="@+id/course_level"
+                        app:layout_constraintStart_toEndOf="@+id/course_level_text"
+                        app:layout_constraintTop_toTopOf="@+id/course_level" />
+
+                    <TextView
+                        android:id="@+id/course_view_count_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@color/ff333333"
+                        app:layout_constraintBottom_toBottomOf="@+id/course_view_count"
+                        app:layout_constraintStart_toEndOf="@+id/course_view_count"
+                        app:layout_constraintTop_toTopOf="@+id/course_view_count"
+                        tools:text="2209" />
+
+                    <TextView
+                        android:id="@+id/course_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/ffd81e06"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/teacher_avatar"
+                        tools:text="￥9999" />
+
+                    <TextView
+                        android:id="@+id/isVipFree_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/is_vip_free_bg"
+                        android:gravity="center"
+                        android:text="VIP免费"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/course_price"
+                        app:layout_constraintStart_toEndOf="@+id/course_price"
+                        app:layout_constraintTop_toTopOf="@+id/course_price" />
+
+                    <TextView
+                        android:id="@+id/course_study_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="学习人数·"
+                        android:textColor="@color/ff1296db"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/isVipFree_text"
+                        app:layout_constraintStart_toEndOf="@+id/isVipFree_text"
+                        app:layout_constraintTop_toTopOf="@+id/isVipFree_text" />
+
+                    <TextView
+                        android:id="@+id/course_study_num_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@color/ff1296db"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/course_study_num"
+                        app:layout_constraintStart_toEndOf="@+id/course_study_num"
+                        app:layout_constraintTop_toTopOf="@+id/course_study_num"
+                        tools:text="171" />
+
+                    <TextView
+                        android:id="@+id/course_description"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="课程介绍"
+                        android:textColor="@color/ff1296db"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/course_price" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/course_description_card"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/course_description">
+
+                        <TextView
+                            android:id="@+id/course_description_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:text="摸鱼君项目" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/course_chapter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:text="课程章节"
+                        android:textColor="@color/ff1296db"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/course_description_card" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/course_chapter_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.alex.sobapp.fragment.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/toArticleFragment"
+            app:destination="@id/articleFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/moYuFragment"
+        android:name="com.alex.sobapp.fragment.MoYuFragment"
+        android:label="MoYuFragment">
+        <action
+            android:id="@+id/toDynamicCommentsFragment"
+            app:destination="@id/dynamicCommentsFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+        <action
+            android:id="@+id/toReleaseDynamicFragment"
+            app:destination="@id/releaseDynamicFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+        <action
+            android:id="@+id/toLargeImageFragment"
+            app:destination="@id/largeImageFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/wendaFragment"
+        android:name="com.alex.sobapp.fragment.WendaFragment"
+        android:label="OtherFragment">
+        <action
+            android:id="@+id/toWendaDetailFragment"
+            app:destination="@id/wendaDetailFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/mineFragment"
+        android:name="com.alex.sobapp.fragment.MineFragment"
+        android:label="MineFragment">
+        <action
+            android:id="@+id/toFocusListFragment"
+            app:destination="@id/focusListFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+        <action
+            android:id="@+id/toUnreadInfoFragment"
+            app:destination="@id/unreadInfoFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+        <action
+            android:id="@+id/toVipFragment"
+            app:destination="@id/vipFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+        <action
+            android:id="@+id/toPersonalSpaceFragment"
+            app:destination="@id/personalSpaceFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/dynamicCommentsFragment"
+        android:name="com.alex.sobapp.fragment.DynamicCommentsFragment"
+        android:label="DynamicCommentsFragment">
+        <action
+            android:id="@+id/action_dynamicCommentsFragment_to_moYuFragment2"
+            app:destination="@id/moYuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/releaseDynamicFragment"
+        android:name="com.alex.sobapp.fragment.ReleaseDynamicFragment"
+        android:label="ReleaseDynamicFragment">
+        <action
+            android:id="@+id/action_releaseDynamicFragment_to_moYuFragment"
+            app:destination="@id/moYuFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/articleFragment"
+        android:name="com.alex.sobapp.fragment.ArticleFragment"
+        android:label="ArticleFragment" />
+    <fragment
+        android:id="@+id/focusListFragment"
+        android:name="com.alex.sobapp.fragment.FocusAndFansFragment"
+        android:label="fragment_focus_list"
+        tools:layout="@layout/fragment_focus_and_fans" />
+    <fragment
+        android:id="@+id/unreadInfoFragment"
+        android:name="com.alex.sobapp.fragment.UnreadInfoFragment"
+        android:label="fragment_unread_info"
+        tools:layout="@layout/fragment_unread_info">
+        <action
+            android:id="@+id/toMineInfoFragment"
+            app:destination="@id/mineInfoFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/mineInfoFragment"
+        android:name="com.alex.sobapp.fragment.MineInfoFragment"
+        android:label="fragment_mine_info"
+        tools:layout="@layout/fragment_mine_info" />
+    <fragment
+        android:id="@+id/wendaDetailFragment"
+        android:name="com.alex.sobapp.fragment.WendaDetailFragment"
+        android:label="WendaDetailFragment" />
+    <fragment
+        android:id="@+id/vipFragment"
+        android:name="com.alex.sobapp.fragment.VipFragment"
+        android:label="VipFragment" />
+    <fragment
+        android:id="@+id/personalSpaceFragment"
+        android:name="com.alex.sobapp.fragment.PersonalSpaceFragment"
+        android:label="PersonalSpaceFragment" />
+    <fragment
+        android:id="@+id/largeImageFragment"
+        android:name="com.alex.sobapp.fragment.LargeImageFragment"
+        android:label="LargeImageFragment" />
+    <fragment
+        android:id="@+id/schoolFragment"
+        android:name="com.alex.sobapp.fragment.SchoolFragment"
+        android:label="SchoolFragment">
+        <action
+            android:id="@+id/toCourseDetailFragment"
+            app:destination="@id/courseDetailFragment"
+            app:enterAnim="@anim/slide_from_right_to_left_in"
+            app:exitAnim="@anim/slide_from_right_to_left_out"
+            app:popEnterAnim="@anim/slide_from_left_to_right_in"
+            app:popExitAnim="@anim/slide_from_left_to_right_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseDetailFragment"
+        android:name="com.alex.sobapp.fragment.CourseDetailFragment"
+        android:label="CourseDetailFragment" />
+</navigation>
